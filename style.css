@@ -58,7 +58,7 @@ body{
 
 
 h1{
-    font-family: campanellaregular;
+    font-family: campanellaregular,sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -67,7 +67,7 @@ h1{
 }
 
 p{
-    font-family: gilroylight;
+    font-family: gilroylight,sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -132,6 +132,9 @@ p{
         width: 50px;
         top:0;
         left: 180px;
+    }
+    .left-top{
+        width: 90px;
     }
 }
 
