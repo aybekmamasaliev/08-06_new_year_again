@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #1A5B35;
+}
+.container{
+    max-width: 662px;
+    height: 349px;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.left-top{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.right-top{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.left-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.melodi{
+    position: absolute;
+    left:14px;
+    bottom: 80px;
+}
+
+@font-face {
+    font-family: 'campanellaregular';
+    src: url('fonts/campanella_regular.woff2') format('woff2'),
+         url('fonts/campanella_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroy-light-webfont.woff2') format('woff2'),
+         url('gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1{
+    font-family: campanellaregular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 115px;
+    color: #D6BD84;
+}
+
+p{
+    font-family: gilroylight;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
+
+
+.center{
+    position: absolute;
+    top:-20px;
+    left:180px;
+}
+.mega{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media (max-width:662px) {
+    h1{
+        font-size: 52px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .left-bottom{
+        display: none;
+    }
+    .right-top{
+        display: none;
+    }
+    .melodi{
+        top:20px;
+        left:85%;
+    }
+    .container{
+        padding: 5px;
+    }
+
+    .left-top{
+        width: 113px;
+    }
+    .center{
+        left:160px;
+    }
+}
+
+@media (max-width:350px) {
+    .container{
+        /* background-color: red; */
+    }
+    h1{
+        margin-top: 100px;
+    }
+    .left-top{
+        width: 90px;
+    }
+    .center{
+        width: 50px;
+        top:0;
+        left: 180px;
+    }
+}
+
+
